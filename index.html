@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <title>Learning Vue</title>
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+  </head>
+  <body>
+    Hi Mom!
+    <div id="app">
+      <h2>{{title}}</h2>
+      <p>Profession: {{work}}</p>
+      <p v-if="showLocation">Location: {{where}}</p>
+      <p>Since: {{since}}</p>
+      <button @click="since++">Increase Since</button>
+      <button @click="since--">Decrease Since</button>
+      <button @click="changeWhere('Odisha')">Change Location</button>
+      <button @click="showWhere">
+        {{showLocation? 'Hide': 'Show'}} Location
+      </button>
+      <div v-show="showLocation">
+        Showing Location, this div dynamically constrolled based on CSS diplay
+        property
+      </div>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
