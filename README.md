@@ -1,6 +1,6 @@
 # Learning Vue Js
 
-##Day 1
+## Day 1
 
 1. What is vue and its advantages?
 2. Documentation & Installation
